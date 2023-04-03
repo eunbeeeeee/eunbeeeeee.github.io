@@ -1,11 +1,11 @@
-title: "EunBee Blog"
-author: "Blog Author"
+title: "Eunbee Blog "
+author: "Eunbee"
 description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
 permalink: /:title/
-lang: "ko"
+lang: "en"
 excerpt_separator: "\n\n\n"
 date_format: "%B %d, %Y"
-url:'http::/eunbeeeeee.github.io/'
+url:'http://eunbeeeeee.github.io/
 
 # Layout
 
