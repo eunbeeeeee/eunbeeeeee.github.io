@@ -14,107 +14,130 @@
 </head>
 <body>
     <div class="container">
+      <div class="header">
+        <h2 class="bee">Eunbee's blog</h2>
+        <ul class="list text-center">
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#skill">MY SKILL</a></li>
+          <li><a href="#liccc">LICENSE & EXPERIENCE</a></li>
+          <li><a href="#port">PORTFOLIO</a></li>
+         </ul>
+      </div>
         <div class="row">
             <div class="col-left section">
                <img src="images/me1.png" alt="me" class="imgme">
                <h1 class="text-center  aniUtil_onMouse ani_heartBeat aniUtil_active">EunBee</h1>
                <p class="text-center">full stack programmer</p>
+                <h2 class="text-center" id="font"><strong>welcom</strong> to my portfolio</h2>
+                <p class="text-center">지난 4년간 직장에서 몸으로 익혀온 프로젝트 관리 능력, <br>고객과의 커뮤니케이션 능력을 살려
+                  새로운 개발의 세계로 도전합니다.</p>
+                  
+                  <p class="text-center" id="font">무엇을 해야 하는지는 본인이 잘 알고 있습니다. 해야 한다고 생각하는것을 하면 됩니다.<br>
+                  언제나 배움의 자세를 멈추지 않고, 발전하는 개발자가 되겠습니다.</p>
                <div class="sns d-flex">
                   <i class="ri-instagram-line"></i>
                   <i class="ri-twitter-line"></i>
                   <i class="ri-facebook-circle-line"></i>
                   <i class="ri-kakao-talk-line"></i>
                </div>
+                <p class="text-center">&copy;ehvlehvl000@naver.com</p>
                <ul class="download d-flex">
-                   <li><a href="#">down my portfolio</a></li>
-                   <li><a href="#">down my curriculum vitae</a></li>
+                   <li><a href="#">my portfolio</a></li>
+                   <li><a href="#">my curriculum</a></li>
                </ul>
             </div>
             <div class="col-right">
-               <h1>about <span>me</span></h1>
+               <h1 id="about">about me</h1>
                <div class="row">
-                   <div class="col-6 col-md-12 ani_flash aniUtil_onMouse aniUtil_active content section">
-                      <p>지난 4년간 직장에서 몸으로 익혀온 사회능력, 고객과의 커뮤니케이션 능력을 살려
-                        새로운 개발의 세계로 도전합니다.</p>
-                        
-                       <p> 무엇을 해야 하는지는 본인이 잘 알고 있습니다. 해야 한다고 생각하는것을 하면 됩니다.
-                        언제나 배움의 자세를 멈추지 않고, 발전하는 개발자가 되겠습니다.
-                      </p>    
-            
+                   <div class="content section">
+                    <div class="name"><i class="fa-solid fa-user"></i>&nbsp;<h2>yun eun bee</h2></div>
+                    <div class="name"><i class="fa-solid fa-calendar-days"></i>&nbsp;<h2>1997. 03. 09</h2></div>
+                    <div class="name"><i class="fa-solid fa-location-dot"></i>&nbsp;<h2>경기도 김포시</h2></div>
+                    <div class="name"><i class="fa-solid fa-phone"></i>&nbsp;<h2>010.5160.6641</h2></div>
+                    <div class="name"><i class="fa-regular fa-envelope"></i><h2>ehvlehvl000@naver.com</h2></div>
+                    <div class="name"><i class="fa-solid fa-graduation-cap"></i>&nbsp;<h2>백석문화대학교 보건행정과 졸업</h2></div>                       
+                  
                    </div>
-                   <div class="col-5 col-md-12 skill section">
-                       <h1>My Skill</h1>
-                       <div id="skill1" class="skills" data-width="90" data-background="#d25fa8">html,css (90%)</div>
-                       <div id="skill2" class="skills" data-width="85" data-background="#d25fa8">javaScript (85%)</div>
-                       <div id="skill3" class="skills" data-width="95" data-background="#d25fa8">database (95%)</div>
-                       <div id="skill4" class="skills" data-width="79" data-background="#d25fa8">java (79%)</div>
-                       <div id="skill5" class="skills" data-width="88" data-background="#d25fa8">react (88%)</div>
+                   <div class="skill section" >
+                       <h1 id="skill">My Skill</h1>
+                       <div id="skill1" class="skills" data-width="70" data-height="30" data-background="#d25fa8">html,css (70%)</div>
+                       <div id="skill2" class="skills" data-width="50" data-height="30" data-background="#d25fa8">javaScript (50%)</div>
+                       <div id="skill3" class="skills" data-width="30" data-height="30" data-background="#d25fa8">database (30%)</div>
+                       <div id="skill4" class="skills" data-width="30" data-height="30" data-background="#d25fa8">java (30%)</div>
+                       <div id="skill5" class="skills" data-width="10" data-height="30" data-background="#d25fa8">react (10%)</div>
                    </div>
 
-                   <div class="col-6 col-md-12 portfolioa section">
-                      <h1 class="license">License</h1>                
+                   <div class=" portfolioa section" >
+                      <h1 class="license" ib="liccc">License & Experience</h1>            
                       <div class="tab">
-                        <button class="tablinks" onclick="openCity(event, 'London')">License#1</button>
-                        <button class="tablinks" onclick="openCity(event, 'Paris')">License#2</button>
-                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">License#3</button>
-                        <button class="tablinks" onclick="openCity(event, 'Tokyo')">License#4</button>
+                        <button class="tablinks" onclick="Licen(event, 'lic1')">License#1</button>
+                        <button class="tablinks" onclick="Licen(event, 'lic2')">License#2</button>
+                        <button class="tablinks" onclick="Licen(event, 'lic3')">License#3</button>
+                        <button class="tablinks" onclick="Licen(event, 'lic4')">License#4</button>
                       </div>
                       
-                      <div id="London" class="tabcontent">
+                      <div id="lic1" class="tabcontent">
                         <h3>License#1</h3>
                         <p>MOSMASTER</p>
                       </div>
                       
-                      <div id="Paris" class="tabcontent">
+                      <div id="lic2" class="tabcontent">
                         <h3>License#2</h3>
                         <p>문서실무사2급</p> 
                       </div>
-                      
-                      <div id="Tokyo" class="tabcontent">
+                      <div id="lic3" class="tabcontent">
                         <h3>License#3</h3>
                         <p>병원행정사</p>
                       </div>
-                      <div id="Tokyo" class="tabcontent">
+                      <div id="lic4" class="tabcontent">
                         <h3>License#4</h3>
                         <p>병원코디네이터</p>
+                      </div>     
+                      <br>
+                      
+                      <div class="tab1">
+                        <button class="tablinkss" onclick="Exper(event, 'Ex')" id="defaultOpen">Experience#1</button>
+                        <button class="tablinkss" onclick="Exper(event, 'Ex1')">Experience#2</button>
+                        <button class="tablinkss" onclick="Exper(event, 'Ex2')">Experience#3</button>
                       </div>
                       
-                        <!-- <ul class="list">
-                            <li><a href="#">문서실무사2급</a></li>
-                            <li><a href="#">mosmaster</a></li>
-                            <li><a href="#">병원코디네이터</a></li>
-                            <li><a href="#">병원행정사</a></li>
-
-                        </ul> -->
-
+                      <div id="Ex" class="tabcontents">
+                        <h3>Experience#1</h3>
+                        <p>2019.1~2021.03 세계손해사정 서면심사팀 주임</p>
+                      </div>
+                      <div id="Ex1" class="tabcontents">
+                        <h3>Experience#2</h3>
+                        <p> 2021.12~2022.12 한국교직원공제회 수납관리팀 사원</p> 
+                      </div>
+                      
+                      <div id="Ex2" class="tabcontents">
+                        <h3>Experience#3</h3>
+                        <p>2023.2~2023.7 이젠아카데미 풀스택 자바웹 개발자_A 수료</p>
+                      </div> 
                    </div>
-                   <div class="col-5 col-md-12 portfoliob section">
-                      <h1 class="port">portfolio</h1>
-                      <div class="slideShow-container">
-                            <div class="mySlides fade">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="/images/Untitled-1.png" style="width:100%">
-                                <div class="text">portfolio#1</div>
-                              </div>
-                              
-                              <div class="mySlides fade">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="/images/Untitled-2.png" style="width:100%">
-                                <div class="text">portfolio#2</div>
-                              </div>
-                              
-                              <div class="mySlides fade">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="/images/Untitled-3.png" style="width:100%">
-                                <div class="text">portfolio#3</div>
-                              </div>
-                              
-                              <a class="prev" onclick="plusSlides(-1)">❮</a>
-                              <a class="next" onclick="plusSlides(1)">❯</a>
-                              
-                              </div>
+
+                   <div class= "portfoliob section" >
+                      <h1 class="port" id="port">portfolio</h1>
+                      <div class="slideshow-container">
+                        <p>저의 portfolio가 궁금하시면 동그라미를 눌러주세요!</p>
+                        <div class="mySlides fade"> 
+                          <img src="/images/00002.png" style="width:80%">
+                          <div class="text">portfolio#1</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <img src="/images/0001.png" style="width:80%">
+                          <div class="text">portfolio#2</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <img src="/images/00003.png" style="width:80%">
+                          <div class="text">portfolio#3</div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                      </div>
                               <br>
-                              
                               <div style="text-align:center">
                                 <span class="dot" onclick="currentSlide(1)"></span> 
                                 <span class="dot" onclick="currentSlide(2)"></span> 
@@ -127,6 +150,6 @@
             </div>
         </div>
     </div>
-  
+    
 </body>
 </html>
