@@ -13,19 +13,17 @@ const Portfolio = () => {
                     </div>
                     <div className="content grid">
                         {
-                            data.map((val, index)=>(
+                            data.map((val, index) => (
                                 <Card 
-                                key={index} 
-                                img={val.img} 
-                                category={val.category} 
-                                title={val.title}
-                                content={val.content}
-                                content1={val.content1}
-                                content2={val.content2}
-                                
+                                    key={index} 
+                                    img={process.env.PUBLIC_URL + val.img}  // 이미지 경로를 절대 경로로 수정
+                                    category={val.category} 
+                                    title={val.title}
+                                    content={val.content}
+                                    content1={val.content1}
+                                    content2={val.content2}
                                 />
                             ))
-
                         }
                     </div>
                 </div>
