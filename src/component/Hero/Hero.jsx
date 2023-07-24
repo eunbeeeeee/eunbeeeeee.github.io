@@ -1,72 +1,31 @@
 import React from 'react';
 import "./hero.css";
-import HeroImg from "../../img/me.png";
 import { Typewriter } from 'react-simple-typewriter';
-import { DiAndroid, DiJava, DiReact } from "react-icons/di";
-import { RiFacebookCircleLine, RiTwitterLine, RiKakaoTalkLine } from "react-icons/ri";
+// import { DiAndroid, DiJava, DiReact } from "react-icons/di";
+// import { RiFacebookCircleLine, RiTwitterLine, RiKakaoTalkLine } from "react-icons/ri";
 const Hero = () => {
     return (
         <>
           <section className="hero" id="hero">
-              <div className="container f-flex top">
+              <div className="container top">
                  <div className="left top">
-                    <h3>welcome to my world</h3>
+                    <h3>welcome to my portfolio</h3>
                     <h1>
                         Hi, I'm <span>EunBee</span>
                     </h1>
                     <h2>
-                       a
                        <span>
-                           <Typewriter words={[" Newbie Developer.", " Professional Coder."]} 
+                           <Typewriter words={[" Front-end developer.","안녕하세요 프론트엔드 개발자를 꿈꾸는 윤은비입니다."]} 
                                        loop cursor cursorStyle="|"
                                        delaySpeed={1000} typeSpeed={70} deleteSpeed={50}
                            />
                        </span>
                     </h2>
                     <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    저는 여러 전산을 사용하면서 사용자로써의 궁금증이 생겨 개발자라는 직업에 관심을 갖게 되었습니다.
+                    이후 학원에서 풀스택 반에서 백, 프론트 두가지를 모두 배우며 프론트엔드 개발자를 꿈꾸며 꾸준히 노력하고 있습니다.
                     </p>
-
-                   <div className="hero-btn d-flex">
-                       <div className="col">
-                           <h4>View My SNS</h4>
-                           <div className="button">
-                               <button className="btn-shadow">
-                                  <RiFacebookCircleLine className="icon" />
-                               </button>
-                               <button className="btn-shadow">
-                                  <RiTwitterLine className="icon" />
-                               </button>
-                               <button className="btn-shadow">
-                                  <RiKakaoTalkLine  className="icon" />
-                               </button>
-                           </div>
-                       </div>
-                       <div className="col">
-                            <h4>BEST MY SKILL</h4>
-                                <div className="button">
-                                    <button className="btn-shadow">
-                                        <DiAndroid  className="icon" />
-                                    </button>
-                                    <button className="btn-shadow">
-                                        <DiJava  className="icon" />
-                                    </button>
-                                    <button className="btn-shadow">
-                                        <DiReact  className="icon" />
-                                    </button>
-                                </div>
-                       </div>
-                   </div>
-
                  </div>
-                 <div className="right">
-                    <div className="right-img">
-                        <img src={HeroImg} alt="me" />
-                    </div>
-                 </div>  
               </div>            
           </section>
         </>

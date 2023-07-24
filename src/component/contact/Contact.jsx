@@ -1,19 +1,16 @@
 import React,{ useRef } from 'react';
-//import {useDispatch} from 'react-redux';
+import me from "../../img/gg.jpg"
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 
 const Contact = () => {
     const form = useRef();
-  //  const dispatch = useDispatch();
+  
 
     const myid = {
         SERVICE_ID : 'eunbeeGmail',
         TEMPLATE_ID: "template_0uqbosh",
         USER_ID : "k6CcaUAx-grNjk5Wf"
-    }
-    const closeEmail = () =>{
-      //  dispatch({type: "CLOSE_EMAIL"});
     }
     const sendEmail = (e) => {
         e.preventDefault();
@@ -38,21 +35,19 @@ const Contact = () => {
 
                     <div className="content d-flex">
                         <div className="left">
-                            <div className="box btn-shadow">
-                                <div className="img">
-                                    <img src="images/toge.jpg" alt="함께" />
+                            <div className="box btn-shadow contact-img">
+                                <div className="cont-img">
+                                    <img src={me} alt="me" />
                                 </div>
                                 <div className="details">
-                                    <h1>저에게 연락주세요</h1>
-                                    <p>안녕하세요 .
-                                    </p>
+                                    <h1>Thank You!</h1>
                                 </div>
                             </div>
                         </div>
                         <div className="right">
                             <div className="box btn-shadow">
                                 <form ref={form} onSubmit={sendEmail} className='emailform'>
-                                 <div className="f-flex">
+                                 <div className="contact">
                                  <div className='col-50'>
                                     <label>보내시는 분 성함</label>
                                     <input type="text" name="user_name" placeholder='이름'/>

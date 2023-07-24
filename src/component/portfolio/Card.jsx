@@ -1,8 +1,8 @@
 import React,{ useState } from 'react';
-import { FcLike, FcRight } from "react-icons/fc";
-import { FaRegThumbsUp, FaAngleRight, FaTimes } from "react-icons/fa";
+import { FcRight } from "react-icons/fc";
+import { FaTimes } from "react-icons/fa";
 
-const Card = ({img, category, totallike , title}) => {
+const Card = ({img, category, content , content1, content2, title}) => {
     const[modal,setModal] =useState(false);
     const toggleModal = () =>{
         setModal(!modal);
@@ -10,7 +10,7 @@ const Card = ({img, category, totallike , title}) => {
     
     return (
         <>
-        <div className="box btn-shadow card">
+        <div className="po-box btn-shadow card">
            <div className="img">
                 <img src={img} alt= {img} onClick={toggleModal}/>
            </div>
@@ -18,10 +18,7 @@ const Card = ({img, category, totallike , title}) => {
                 <span>
                     {category}
                 </span>
-                <label>
-                    <FcLike />
-                    {totallike}
-                </label>
+
            </div>
            <div className="title">
                 <h2>{title}</h2>
@@ -37,17 +34,10 @@ const Card = ({img, category, totallike , title}) => {
                     <img src= {img}  alt= {img} />
                 </div>
                 <div className="modal-text right">
-                    <span>Features - Design</span>
                     <h1>{title}</h1>
-                    <p>react blog</p>
-                    <p>react blog</p>
-                    <p>react blog</p>
-                    <button className="btn-shadow">
-                        LIKE THIS <FaRegThumbsUp />
-                    </button>
-                    <button className="btn-shadow">
-                        VIEW PROJECT <FaAngleRight />
-                    </button>
+                    <p>{content}</p>
+                    <p>{content1}</p>
+                    <p>{content2}</p>
                     <button className="btn-shadow close-modal"onClick={toggleModal}>
                         <FaTimes />
                     </button>

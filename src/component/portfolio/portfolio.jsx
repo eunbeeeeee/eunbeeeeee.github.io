@@ -1,7 +1,7 @@
 import React from 'react';
 import "./portfolio.css";
 import data from '../../data/api2';
-import Card from '../portfolio/Card';
+import Card from './Card';
 
 const Portfolio = () => {
     return (
@@ -9,7 +9,6 @@ const Portfolio = () => {
             <section className="portfolio top" id="portfolio">
                 <div className="container">
                     <div className="heading text-center">
-                        <h4>Visit my Portfolio and keep your feedback</h4>
                         <h1>My Portfolio</h1>
                     </div>
                     <div className="content grid">
@@ -19,8 +18,11 @@ const Portfolio = () => {
                                 key={index} 
                                 img={val.img} 
                                 category={val.category} 
-                                totallike={val.totallike} 
                                 title={val.title}
+                                content={val.content}
+                                content1={val.content1}
+                                content2={val.content2}
+                                
                                 />
                             ))
 

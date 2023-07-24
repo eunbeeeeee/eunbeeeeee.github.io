@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../img/eunbee.png";
+import logo from "../../img/elogo.png";
 import  "./footer.css";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="img">
                     <img src={logo} alt={logo} />
                 </div>
-                <p>&copy; 2023. All right reserved. design by BBeaKim!</p>
+                <p style={{marginTop:"30px"}}>&copy; Copyright 2023. Web Front-end developer portfolio-- by EunBee</p>
             </div>   
         </footer>
         </>

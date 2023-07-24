@@ -1,5 +1,6 @@
 .portfolio{
     position: relative;
+    padding-top: 150px;
 }
 .portfolio .box{
     border-radius: 10px;
@@ -67,7 +68,6 @@
 .portfolio h2{
     font-size: 20px;
     transition: 0.5s;
-    padding-bottom: 30px;
 }
 .portfolio .box:hover h2{
     color: #fff;
@@ -102,15 +102,15 @@
     z-index: 999;
 }
 .overlay{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-content{
     position: absolute;
     top: 10%;
-    left: 8%;
+    left: 20%;
     line-height: 1.4;
     background: #f0f3f5;
-    padding: 15px 30px;
+    padding: 30px 30px;
     min-width: 60%;
     max-width: 85%;
     z-index: 9999;
@@ -118,10 +118,12 @@
                 4px -4px 8px rgba(0,0,0,0.1);
     padding: 50px;
     border-radius: 10px;
-    
+    width: 800px;
+    height: 500px;
 }
 .modal-text{
     padding: 0 100px 0 50px;
+    position: relative;
 }
 .modal-text h1{
     margin: 20px 0;
@@ -138,8 +140,8 @@
 }
 .modal-text button.close-modal{
     position: absolute;
-    top: 30px;
-    right: 50px;
+    top: -30px;
+    right: -30px;
     margin: 0;
     padding: 0;
     line-height: 55px;
@@ -147,7 +149,4 @@
     width: 50px;
     height: 50px;
     box-sizing: border-box;
-}
-.overlay{
-    background-color: rgba(0, 0, 0, 0.5);
 }

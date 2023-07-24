@@ -2,10 +2,9 @@ import React from 'react';
 import "./App.css";
 import Header from "./component/head/Header";
 import Hero from './component/Hero/Hero';
-import Features from './component/features/Features';
 import Portfolio from './component/portfolio/portfolio';
-import Resume from './component/resume/Resume';
-import Group from './component/group/Group';
+import Skills from './component/skils/Skills';
+import About from './component/about/About';
 import Contact from './component/contact/Contact';
 import Footer from './component/footer/Footer';
 
@@ -14,10 +13,9 @@ const App = () => {
     <>
       <Header /> 
       <Hero />
-      <Features />
+      <About/>
+      <Skills/>
       <Portfolio />
-      <Resume />
-      <Group />
       <Contact/>
       <Footer/>
     </>

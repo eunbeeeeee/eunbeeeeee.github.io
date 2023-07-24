@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./header.css";
-import logo from "../../img/eunbee.png";
+import logo from "../../img/elogo.png";
 import { RxHamburgerMenu, RxCross1 } from 'react-icons/rx';
 const Header = () => {
 
@@ -13,12 +13,10 @@ const Header = () => {
                 </div>
                 <div className="navlink">
                     <ul className={ mobile ? "nav-link-mobile" : "link f-flex uppercase"} onClick={()=>setMobile(false)}>
-                        <li><a href="#features">features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#resume">resume</a></li>
-                        <li><a href="#group">study group</a></li>
                         <li><a href="#contact">contact me</a></li>
-                        <li><button className="home-btn">PDF DOWN</button></li>
                     </ul>
                 </div>
 

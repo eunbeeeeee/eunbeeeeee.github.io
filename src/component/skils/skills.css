@@ -1,0 +1,56 @@
+
+.skillcontainer{
+  padding-top: 150px;
+}
+.skilsname h3{
+  text-align: center;
+  font-size: 65px;
+  color: #3c3e41;
+  margin-bottom: 50px;
+}
+.skill-bar {
+    margin-bottom: 10px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .bar-percent{
+    position: absolute;
+    left: 82%;
+    transform: translate(-50%, -120%); 
+    font-weight: bold;
+    color: #666;
+  }
+  .skill-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .bar-wrapper {
+    width: 100%;
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+    background: linear-gradient(to right, #ed9fac, pink);
+    border-radius: 10px;
+    position: relative;
+    width: 0;
+    animation: fillBar 1s ease-in-out forwards;
+  }
+  
+  @keyframes fillBar {
+    from {
+      width: 0; /* 시작은 너비가 0 */
+    }
+  }
+
+  .bar:hover {
+    background-color: #ededed;
+  }
+  
