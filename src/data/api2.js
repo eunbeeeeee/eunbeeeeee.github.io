@@ -99,9 +99,8 @@ const data = [
       img: "/images/pet.png",
       category: "#JSP #MYSQL #SPRING",
       title: "*펫더랜드[반려동물 호텔]",
-      content:"**현재 진행중**",
       content1:"디자인, 프론트엔드, 백엔드 나누어 팀작업",
-      content2:"main, memberlogin부분 진행 중 ",
+      content2:"반려동물 전용 호텔 ",
    },
  
  ];
