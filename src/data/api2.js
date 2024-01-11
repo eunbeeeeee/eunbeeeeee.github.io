@@ -100,7 +100,10 @@ const data = [
       category: "#JSP #MYSQL #SPRING",
       title: "*펫더랜드[반려동물 호텔]",
       content1:"디자인, 프론트엔드, 백엔드 나누어 팀작업",
+<<<<<<< HEAD
       content2:"반려동물 전용 호텔 ",
+=======
+>>>>>>> c3d4ed52a56877225296e71b6716b6cca0659522
    },
  
  ];
